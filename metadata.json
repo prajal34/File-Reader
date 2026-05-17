@@ -1,0 +1,8 @@
+{
+  "name": "Android Architecture Blueprint",
+  "description": "Architectural blueprint and documentation for a high-performance, offline-first Android File Viewer built with Jetpack Compose.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -96,23 +96,28 @@ export default function App() {
         {/* Scrollable Content */}
         <div className="flex-1 overflow-y-auto px-10 pb-20 scroll-smooth border-t border-transparent">
           
-          <div className="bg-surface border border-border rounded-xl p-6 flex justify-between items-center mb-6 mt-2 max-w-4xl mx-auto">
-            <div className="flex-1 text-left">
-              <div className="text-sm text-muted mb-2 flex justify-between pr-10">
-                <span>Memory Footprint Goal</span>
-                <span className="font-medium text-ink">{'< 50MB'}</span>
-              </div>
-              <div className="h-2 bg-[#EFEBE5] rounded-full w-[90%] relative">
-                <div className="absolute top-0 left-0 h-full bg-accent rounded-full w-[15%]"></div>
-              </div>
+          <div className="bg-[#ECFDF5] border border-[#10B981] rounded-xl p-6 flex flex-col mb-10 mt-2 max-w-3xl mx-auto shadow-sm">
+            <div className="flex items-center gap-3 mb-4">
+              <CheckCircle2 size={24} className="text-[#065F46]" />
+              <h2 className="text-lg font-semibold text-[#065F46] m-0 text-left">Your Android Studio Project is Ready!</h2>
             </div>
-            <div className="ml-10 text-right">
-              <div className="text-xs text-muted mb-1">Target FPS</div>
-              <div className="text-[20px] font-semibold text-ink">120 fps</div>
+            <p className="text-[14px] text-[#065F46] leading-relaxed mb-6 text-left font-medium">
+              We have generated a highly performant, native Android Project utilizing Kotlin and Jetpack Compose directly in the workspace! Since this is a browser-based preview environment, it will only display this web dashboard, but the actual Android source code has been created at the root of this workspace.
+            </p>
+            
+            <div className="bg-white rounded-lg p-5 border border-[#10B981]/30">
+              <h3 className="font-semibold text-[#065F46] text-sm uppercase tracking-wider mb-4 text-left">How to Export and Run it on Android</h3>
+              <ol className="text-sm text-ink-light space-y-3 pl-5 list-decimal text-left marker:font-semibold marker:text-[#10B981]">
+                <li><strong className="text-ink">Export the Project:</strong> Click the <b>Settings</b> menu (gear icon) in the top-right corner of AI Studio, then select <b>Export to GitHub</b> (or Export to ZIP).</li>
+                <li><strong className="text-ink">Clone & Open:</strong> Clone the repository you just exported from GitHub and open that cloned folder using <b>Android Studio</b>.</li>
+                <li><strong className="text-ink">Sync Gradle:</strong> Allow Android Studio to download dependencies and sync the Gradle build files.</li>
+                <li><strong className="text-ink">Install on Mobile:</strong> Connect your Android device via USB (with <i>USB Debugging</i> enabled) or start an Emulator, then click the green <b>Run</b> (Play) button in Android Studio to build the `.apk` and install it on your device!</li>
+              </ol>
             </div>
           </div>
 
           <div className="mb-10 space-y-4 max-w-3xl mx-auto pt-2">
+            <h2 className="text-xl font-semibold m-0 text-left">Internal Project Blueprint Overview</h2>
             <p className="text-[14px] text-muted leading-relaxed text-left">
               An architectural blueprint engineered for absolute speed, zero UI stutter, and low memory footprint utilizing Kotlin Coroutines, Jetpack Compose, and Scoped Storage.
             </p>
